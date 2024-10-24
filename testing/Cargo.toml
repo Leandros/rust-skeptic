@@ -3,6 +3,7 @@ name = "testing"
 version = "0.1.0"
 build = "build.rs"
 publish = false
+edition = "2021"
 
 # This is needed for the build script, 'build.rs'
 [build-dependencies.skeptic]
@@ -18,6 +19,6 @@ path = "../skeptic"
 path = "../skeptic"
 
 [dependencies.derive_more]
-version = "0.99"
-default_features = false
+version = "=0.99.17"
+default-features = false
 features = ["from"]
